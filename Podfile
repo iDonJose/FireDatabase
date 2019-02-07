@@ -6,12 +6,18 @@ inhibit_all_warnings!
 
 
 def pods
-
-  pod 'ReactiveSwift', '~> 4.0'
-
-  # Linting
-  pod 'SwiftLint', '~> 0.28'
-
+	# Firebase
+	## Issue with higher versions from 5.12, plus needs to be build with legacy system
+	pod 'Firebase/Core', '~> 5.12.0'
+	pod 'Firebase/Database', '~> 5.12.0'
+	# Firebase (fix)
+	pod 'GoogleAppMeasurement', '~> 5.3.0'
+	# Reactive
+	pod 'ReactiveSwift', '~> 4.0'
+	# Swift
+	pod 'SwiftXtend', '~> 1.1'
+	# Linting
+	pod 'SwiftLint', '~> 0.28'
 end
 
 def test_pods
@@ -23,20 +29,18 @@ end
 
 
 
-target '<Framework>-iOS' do
+target 'FireDatabase-iOS' do
   platform :ios, '8.0'
-
   pods
-
-  target '<Framework>-Tests-iOS' do
-    inherit! :search_paths
-    
-    test_pods
-
-  end
-
 end
 
+target 'FireDatabase-Tests-iOS' do
+	platform :ios, '8.0'
+
+	pod 'FireDatabase', :path => '../FireDatabase'
+	pods
+	test_pods
+end
 
 
 post_install do |installer|

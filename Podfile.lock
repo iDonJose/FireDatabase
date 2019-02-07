@@ -1,0 +1,137 @@
+PODS:
+  - Firebase/Core (5.12.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.3.0)
+  - Firebase/CoreOnly (5.12.0):
+    - FirebaseCore (= 5.1.7)
+  - Firebase/Database (5.12.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (= 5.0.3)
+  - FirebaseAnalytics (5.3.0):
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.3)
+    - GoogleAppMeasurement (~> 5.3)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - FirebaseCore (5.1.7):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseDatabase (5.0.3):
+    - FirebaseCore (~> 5.0)
+    - leveldb-library (~> 1.18)
+  - FirebaseInstanceID (3.3.0):
+    - FirebaseCore (~> 5.1)
+    - GoogleUtilities/Environment (~> 5.3)
+    - GoogleUtilities/UserDefaults (~> 5.3)
+  - FireDatabase (1.0.0):
+    - FirebaseDatabase (~> 5.0.3)
+    - FireDatabase/Core (= 1.0.0)
+    - FireDatabase/ReactiveSwift (= 1.0.0)
+    - SwiftXtend (~> 1.1)
+  - FireDatabase/Core (1.0.0):
+    - FirebaseDatabase (~> 5.0.3)
+    - SwiftXtend (~> 1.1)
+  - FireDatabase/ReactiveSwift (1.0.0):
+    - FirebaseDatabase (~> 5.0.3)
+    - FireDatabase/Core
+    - ReactiveSwift (~> 4.0)
+    - SwiftXtend (~> 1.1)
+  - GoogleAppMeasurement (5.3.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleUtilities/AppDelegateSwizzler (5.3.7):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.3.7)
+  - GoogleUtilities/Logger (5.3.7):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.3.7):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.3.7):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.3.7)"
+  - GoogleUtilities/Reachability (5.3.7):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (5.3.7):
+    - GoogleUtilities/Logger
+  - leveldb-library (1.20)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - Nimble (7.3.3)
+  - Quick (1.3.4)
+  - ReactiveSwift (4.0.0):
+    - Result (~> 4.0)
+  - Result (4.1.0)
+  - SwiftLint (0.30.1)
+  - SwiftXtend (1.1.0):
+    - SwiftXtend/Core (= 1.1.0)
+    - SwiftXtend/UIKit (= 1.1.0)
+  - SwiftXtend/Core (1.1.0)
+  - SwiftXtend/UIKit (1.1.0):
+    - SwiftXtend/Core
+
+DEPENDENCIES:
+  - Firebase/Core (~> 5.12.0)
+  - Firebase/Database (~> 5.12.0)
+  - FireDatabase (from `../FireDatabase`)
+  - GoogleAppMeasurement (~> 5.3.0)
+  - Nimble (~> 7.3)
+  - Quick (~> 1.3)
+  - ReactiveSwift (~> 4.0)
+  - SwiftLint (~> 0.28)
+  - SwiftXtend (~> 1.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseDatabase
+    - FirebaseInstanceID
+    - GoogleAppMeasurement
+    - GoogleUtilities
+    - leveldb-library
+    - nanopb
+    - Nimble
+    - Quick
+    - ReactiveSwift
+    - Result
+    - SwiftLint
+    - SwiftXtend
+
+EXTERNAL SOURCES:
+  FireDatabase:
+    :path: "../FireDatabase"
+
+SPEC CHECKSUMS:
+  Firebase: 9190018e296139d938b99521cde0c15a6e8d2946
+  FirebaseAnalytics: 63202d2665de4e6adcbdce189135255d8b5962ba
+  FirebaseCore: 027d350adc039aa5483357c6f56556f117c5170e
+  FirebaseDatabase: e2bcbc106adc4b11a2da3ec2eb63c0c4a44f2f54
+  FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
+  FireDatabase: 401ccebb6be22280c43130f04dd87acd35eb9211
+  GoogleAppMeasurement: 5029d78f2b438bd30ffb44e6c558b57c21622727
+  GoogleUtilities: 111a012f4c3a29c9e7c954c082fafd6ee3c999c0
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  Nimble: 3b434b1e7d0a92603a13550a82880b0d952f518e
+  Quick: f4f7f063c524394c73ed93ac70983c609805d481
+  ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
+  SwiftXtend: 473a0a8f7c7017246b68164c81d308a135ce39db
+
+PODFILE CHECKSUM: 3b0bbe1d183b619cacd304047e5e562d44264592
+
+COCOAPODS: 1.5.3
