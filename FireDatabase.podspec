@@ -5,7 +5,7 @@
 Pod::Spec.new do |s|
 
     s.name         = "FireDatabase"
-    s.version      = "1.0.0"
+    s.version      = "1.0.1"
     s.summary      = "Firebase FireDatabase helpful extensions + ReactiveSwift"
     s.description  = <<-DESC
 						Working with Firebase Database become a whole lot easier with this framework !
